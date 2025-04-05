@@ -25,12 +25,13 @@
         align-items: center;
         justify-content: center;
         margin-top: 40px;
-        gap: 30px;
+        gap: 20px;
         height: 400px;
         width: 300px;
       }
       .p1 {
         color: green;
+        font-size: large;
       }
       #userInput {
         border: none;
@@ -42,14 +43,16 @@
       }
       #userInput1 {
         color: red;
-        font-size: large;
+        font-size: 25px;
       }
       #numb {
         color: red;
         background-color: yellow;
       }
-      .btn{
+      .btn {
         font-size: large;
+        background-color: chartreuse;
+        border-radius: 10px;
       }
 
       #res {
@@ -81,7 +84,6 @@
           return "Odd Number";
         }
       }
-      
       function checkNumber() {
         let num = document.getElementById("userInput").value;
         document.getElementById("numb").textContent = num;
