@@ -48,6 +48,9 @@
         color: red;
         background-color: yellow;
       }
+      .btn{
+        font-size: large;
+      }
 
       #res {
         color: red;
@@ -62,7 +65,7 @@
       <div class="box">
         <label for="userInput" id="userInput1">Enter a number:</label>
         <input type="number" id="userInput" />
-        <button onclick="checkNumber()">Check</button>
+        <button class="btn" onclick="checkNumber()">Check</button>
         <p class="p1">Given Number: <span id="numb"></span></p>
         <p class="p1">Result: <span id="res"></span></p>
       </div>
@@ -78,6 +81,7 @@
           return "Odd Number";
         }
       }
+      
       function checkNumber() {
         let num = document.getElementById("userInput").value;
         document.getElementById("numb").textContent = num;
